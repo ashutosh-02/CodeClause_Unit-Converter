@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit-Convertor</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="outer_div">
+
+            <div id="header">
+                <h1>Unit-Convertor</h1>
+            </div>
+
+            <div id="main">
+              <div id="conv">
+                <form id="form">
+                  <label id="try" for="dropdown">Select Quantity:</label>
+                  <select id="dropdown" name="Quantity" onchange="updateUnitDropdown()">
+                    <option value="length">Length</option>
+                    <option value="weight">Weight</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="area">Area</option>
+                  </select><br>
+                  <input placeholder="Enter Value" type="number" id="value1">
+                  <select id="dropdown1" name="unit1">
+                    <option>Kilometer</option>
+                    <option>Meter</option>
+                    <option>Millimeter</option>
+                    <option>Centimeter</option>
+                  </select>
+                  <button type="button" class="button" onclick="convertUnit1()">Convert</button>
+                  <input placeholder="Converted Value" type="number" id="value2" readonly>
+                  <select id="dropdown2" name="unit2">
+                    <option>Kilometer</option>
+                    <option>Meter</option>
+                     <option>Millimeter</option>
+                    <option>Centimeter</option>
+                  </select>
+                </form>
+              </div>
+              
+              <script src="script.js"></script>
+            </div>
+              
+        </div>
+    </body>
+</html>
+
